@@ -22,3 +22,25 @@
   height: 100%;
   background: url(./../images/webcafe-logo.png) no-repeat 0 0 / 100%;
 }
+
+/* 공통 멤버 서비스 */
+.memberOnly {
+  background-color: violet;
+  padding-left: 0;
+  list-style: none;
+  /* display: flow-root; */
+  float: right;
+}
+
+.memberOnly li:first-child {
+  /* background-color: yellowgreen; */
+  float: left;
+}
+.memberOnly li:nth-child(2) {
+  /* background-color: salmon; */
+  float: left;
+}
+.memberOnly li:last-child {
+  /* background-color: aqua; */
+  float: left;
+}
