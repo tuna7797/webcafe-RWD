@@ -10,7 +10,6 @@ body {
 /* keyframe 선언 */
 @keyframes moveEffect {
   0% {
-    background: yellow;
     /* padding: 0; */
     /* transform: translate(0, 0); */
     top: 0;
@@ -19,7 +18,6 @@ body {
     color: rgba(0, 0, 0, 0);
   }
   100% {
-    background: pink;
     /* padding: 75px 0 0 400px; */
     /* transform: translate(400px, 75px); */
     top: 75px;
@@ -30,12 +28,32 @@ body {
 }
 
 .visual {
-  /* border: 1px solid green; */
+  border: 1px solid green;
   width: 940px;
   height: 120px;
   margin: 0 auto;
-  background-color: skyblue;
   position: relative;
+}
+
+.visual::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background: yellow;
+  width: 100%;
+  height: 100%;
+}
+
+.visual::after {
+  top: 0;
+  left: 0;
+  position: absolute;
+  content: "";
+  background: url(./../assets/ani_flower_03.png),
+    url(./../assets/ani_flower_04.png), pink;
+  width: 100%;
+  height: 100%;
 }
 
 .visual-text {
