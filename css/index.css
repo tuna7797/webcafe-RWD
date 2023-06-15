@@ -225,7 +225,36 @@ iframe {
 
 /* 공통 게시판 */
 .board {
-  background: skyblue;
+  position: relative;
+}
+
+.board__list {
+  padding-left: 0;
+}
+
+.board__item {
+  background: pink;
+  display: flex;
+  flex-flow: row nowrap;
+  /* justify-content: space-between; */
+}
+
+.board__link {
+  flex-grow: 1;
+  background: yellow;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.board__date {
+  flex-shrink: 0;
+  background: lime;
+}
+.board__more {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 /* 공통 인기사이트 */
