@@ -236,18 +236,21 @@ iframe {
   background: pink;
   display: flex;
   flex-flow: row nowrap;
-  /* justify-content: space-between; */
+  margin-top: var(--spacing-xs);
 }
 
 .board__link {
-  flex-grow: 1;
   background: yellow;
+  width: calc(100% - 6rem);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .board__date {
+  flex-grow: 1;
+  text-align: right;
+  width: 5.3125rem;
   flex-shrink: 0;
   background: lime;
 }
